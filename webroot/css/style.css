@@ -28,6 +28,10 @@ header {
     padding: 16px 0px;
     box-shadow: 0px 1px rgba(0, 0, 0, 0.24);
 }
+.header_salir{
+	color: #fff;
+    margin-right: 2em;
+}
 
 header .header-title {
     padding-left:80px

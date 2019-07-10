@@ -50,13 +50,8 @@ class AppController extends Controller
         $this->loadComponent('Flash');
         $this->loadComponent('Auth', [
             'loginRedirect' => [
-                'controller' => 'Procesos',
+                'controller' => 'Usuarios',
                 'action' => 'index'
-            ],
-            'logoutRedirect' => [
-                'controller' => 'Pages',
-                'action' => 'display',
-                'home'
             ],
             'loginAction' => [
               'controller' => 'usuarios',
@@ -83,13 +78,9 @@ class AppController extends Controller
          */
         //$this->loadComponent('Security');
     }
-    public function us()
-     {
-       return "leider soto";
-     }
-
+   
     public function beforeFilter(Event $event)
      {
-         $this->Auth->allow(['index', 'view', 'usuarios'=>"add"]);
+         //$this->Auth->allow(['index', 'view', 'usuarios'=>"add"]);
      }
 }

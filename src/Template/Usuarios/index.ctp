@@ -6,8 +6,8 @@
 ?>
 <nav class="large-2 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New Usuario'), ['action' => 'add']) ?></li>
+        <li class="heading"><?= __('Accion') ?></li>
+        <li><?= $this->Html->link(__('Nuevo Usuario'), ['action' => 'add']) ?></li>
     </ul>
 </nav>
 <div class="usuarios index large-10 medium-8 columns content">

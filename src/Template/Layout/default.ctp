@@ -40,14 +40,15 @@ $cakeDescription = 'SP';
    <script>
     var ruta='<?=$this->request->base.'/'.$this->request->controller?>';
    </script>
+   <?php  $salir=$this->request->base."/usuarios/logout";?>
     <nav class="top-bar expanded" data-topbar role="navigation">
         <ul class="title-area large-2 medium-4 columns">
             <li class="name">
                 <h1><a href=""><?= $this->fetch('title') ?></a></h1>
             </li>
         </ul>
-        <div class="top-bar-section">
-         <?php echo $this->Session->read('Auth.Usuarios.id');?>
+        <div class="top-bar-section" style="float: right">
+		 <a href="<?php echo $salir;?>" class="header_salir">Salir</a>
         </div>
     </nav>
     <?= $this->Flash->render() ?>
